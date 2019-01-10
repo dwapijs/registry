@@ -1,5 +1,5 @@
 import { Table, Column, Model, HasMany, PrimaryKey } from 'sequelize-typescript';
-import { Practice } from "./practice";
+import { Practice } from "./Practice";
 
 @Table
 export  class PracticeType extends Model<PracticeType> {

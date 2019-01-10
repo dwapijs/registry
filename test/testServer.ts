@@ -1,5 +1,5 @@
 import { Sequelize } from 'sequelize-typescript';
-import { Practice } from "../src/core/models/practice";
+import * as path from 'path';
 
 export const sequelize = new Sequelize({
     database: 'registryTest',
@@ -8,5 +8,6 @@ export const sequelize = new Sequelize({
     password: '',
     storage: ':memory',
     operatorsAliases: Sequelize.Op as any,
-    logging: true
+    modelPaths: [path.join(__dirname, '../src/core/models')],
+    logging: false
 });

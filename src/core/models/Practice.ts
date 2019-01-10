@@ -1,12 +1,25 @@
-import { Table, Column, Model, HasMany, PrimaryKey, BelongsTo, ForeignKey, HasOne } from 'sequelize-typescript';
-import { PracticeType } from "./practice-type";
-// import { PracticeProfile } from "./practice-profile";
+import {
+    Table,
+    Column,
+    Model,
+    HasMany,
+    PrimaryKey,
+    BelongsTo,
+    ForeignKey,
+    HasOne,
+    DataType, Sequelize
+} from 'sequelize-typescript';
+import { PracticeType } from "./PracticeType";
+import { PracticeProfile } from "./PracticeProfile";
 
 @Table
 export class Practice extends Model<Practice> {
 
     @PrimaryKey
-    @Column
+    @Column({
+        type:DataType.UUID,
+        defaultValue:Sequelize.UUIDV1
+    })
     id: string;
 
     @Column
@@ -14,6 +27,9 @@ export class Practice extends Model<Practice> {
 
     @Column
     name: string;
+
+    @HasOne(() => PracticeProfile)
+    profile: PracticeProfile;
 
     @ForeignKey(() => PracticeType)
     @Column
