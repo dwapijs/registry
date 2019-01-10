@@ -1,0 +1,22 @@
+{
+  "name": "registry",
+  "version": "1.0.0",
+  "description": "dwapijs registry",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwapijs/registry.git"
+  },
+  "keywords": [
+    "dwapijs"
+  ],
+  "author": "Koske Kimutai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dwapijs/registry/issues"
+  },
+  "homepage": "https://github.com/dwapijs/registry#readme"
+}
