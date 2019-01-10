@@ -34,11 +34,15 @@
     "@types/jest": "^23.3.12",
     "@types/node": "^10.12.18",
     "async": "^2.6.1",
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.11",
+    "reflect-metadata": "^0.1.12",
+    "sequelize": "^4.42.0",
+    "sequelize-typescript": "^0.6.6"
   },
   "devDependencies": {
     "@types/async": "^2.0.50",
     "@types/lodash": "^4.14.119",
+    "@types/sequelize": "^4.27.33",
     "chai": "^4.2.0",
     "concurrently": "^4.1.0",
     "jest": "^23.6.0",
